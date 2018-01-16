@@ -40,7 +40,7 @@ module.exports = merge(baseWebpackConfig, {
             // favicon background color (see https://github.com/haydenbleasel/favicons#usage)
             background: '#fff',
             // favicon app title (see https://github.com/haydenbleasel/favicons#usage)
-            title: 'Fireball Studio',
+            title: 'Webpack starter project',
             // which icons should be generated (see https://github.com/haydenbleasel/favicons#usage)
             icons: {
                 android: false,
@@ -62,5 +62,6 @@ module.exports = merge(baseWebpackConfig, {
                 screw_ie8: true,
             },
         }),
+        new ExtractTextPlugin('style.css?[hash]'),
     ],
 });
